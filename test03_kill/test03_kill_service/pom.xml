@@ -27,7 +27,8 @@
         <curator.version>2.12.0</curator.version>
         <shiro.version>1.2.6</shiro.version>
         <gson.version>2.6.1</gson.version>
-        <redisson.version>3.8.2</redisson.version>
+        <redisson.version>3.11.6</redisson.version>
+<!--        <redisson.version>3.8.2</redisson.version>-->
         <common-lang.version>3.8</common-lang.version>
     </properties>
 
@@ -175,8 +176,16 @@
         <!-- redis -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>redis.clients</groupId>-->
+<!--            <artifactId>jedis</artifactId>-->
+<!--            <version>2.9.0</version>-->
+<!--        </dependency>-->
+
+
+
 
         <dependency>
             <groupId>commons-fileupload</groupId>
@@ -196,11 +205,11 @@
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
-            <version>1.4.7.RELEASE</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-redis</artifactId>-->
+<!--            <version>1.4.7.RELEASE</version>-->
+<!--        </dependency>-->
         <!--redisson-->
         <dependency>
             <groupId>org.redisson</groupId>

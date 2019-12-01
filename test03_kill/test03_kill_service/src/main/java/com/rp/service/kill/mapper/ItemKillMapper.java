@@ -2,6 +2,7 @@ package com.rp.service.kill.mapper;
 
 import com.rp.service.kill.entity.ItemKill;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface ItemKillMapper extends BaseMapper<ItemKill> {
 
+    int updateItemKill(@Param("killId") Integer killId);
 }

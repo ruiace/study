@@ -302,6 +302,54 @@ public class RabbitmqConfig {
         return BindingBuilder.bind(delayQueue1()).to(deadLetterExchange()).with("DELAY_ROUTING_KEY");
     }
 
+
+
+
+    //===================
+
+
+
+    //构建秒杀成功之后-订单超时未支付的死信队列消息模型
+
+    @Bean
+    public Queue queue1(){
+        Map<String, Object> argsMap= Maps.newHashMap();
+        argsMap.put("x-dead-letter-exchange","exchange2");
+        argsMap.put("x-dead-letter-routing-key","key2");
+        return new Queue("queue1",true,false,false,argsMap);
+    }
+
+    //基本交换机
+    @Bean
+    public TopicExchange exchange1(){
+        return new TopicExchange("exchange1",true,false);
+    }
+
+    //创建基本交换机+基本路由 -> 死信队列 的绑定
+    @Bean
+    public Binding binding1(){
+        return BindingBuilder.bind(queue1()).to(exchange1()).with("key1");
+    }
+
+    //真正的队列
+    @Bean
+    public Queue queue2(){
+        return new Queue("queue2",true);
+    }
+
+    //死信交换机
+    @Bean
+    public TopicExchange exchange2(){
+        return new TopicExchange("exchange2",true,false);
+    }
+
+    //死信交换机+死信路由->真正队列 的绑定
+    @Bean
+    public Binding binding2(){
+        return BindingBuilder.bind(queue2()).to(exchange2()).with("key2");
+    }
+
+
 }
 
 

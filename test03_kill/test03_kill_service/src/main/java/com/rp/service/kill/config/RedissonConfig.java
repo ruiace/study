@@ -22,6 +22,11 @@ public class RedissonConfig {
     @Bean
     public RedissonClient redissonClient(){
         Config config=new Config();
+//        config.useClusterServers()
+//                //多个用逗号隔开 https://github.com/redisson/redisson
+//                .addNodeAddress(env.getProperty("redis.config.host"))
+//                .setPassword("123456");
+
         config.useSingleServer()
                 .setAddress(env.getProperty("redis.config.host"))
                 .setPassword(env.getProperty("spring.redis.password"));

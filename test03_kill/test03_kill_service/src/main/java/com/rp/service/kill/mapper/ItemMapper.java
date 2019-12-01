@@ -3,6 +3,7 @@ package com.rp.service.kill.mapper;
 import com.rp.service.kill.entity.Item;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.rp.service.kill.entity.ItemKill;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,4 +18,6 @@ import java.util.List;
 public interface ItemMapper extends BaseMapper<Item> {
 
     List<ItemKill> selectAll();
+
+    ItemKill selectDetailById(@Param("id") Integer id);
 }

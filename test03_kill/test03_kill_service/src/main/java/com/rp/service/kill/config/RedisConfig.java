@@ -1,7 +1,4 @@
-package com.rp.service.kill.config;/**
- * Created by Administrator on 2019/7/2.
- */
-
+package com.rp.service.kill.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

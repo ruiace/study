@@ -1,6 +1,4 @@
-package com.rp.service.kill.dto;/**
- * Created by Administrator on 2019/6/21.
- */
+package com.rp.service.kill.dto;
 
 import com.rp.service.kill.entity.ItemKillSuccess;
 import lombok.Data;
@@ -8,11 +6,10 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @Author:debug (SteadyJack)
- * @Date: 2019/6/21 22:02
+ *
  **/
 @Data
-public class KillSuccessUserInfo extends ItemKillSuccess implements Serializable{
+public class KillSuccessUserInfo extends ItemKillSuccess implements Serializable {
 
     private String userName;
 
@@ -24,7 +21,7 @@ public class KillSuccessUserInfo extends ItemKillSuccess implements Serializable
 
     @Override
     public String toString() {
-        return super.toString()+"\nKillSuccessUserInfo{" +
+        return super.toString() + "\nKillSuccessUserInfo{" +
                 "userName='" + userName + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +

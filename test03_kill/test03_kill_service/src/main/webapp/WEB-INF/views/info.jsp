@@ -11,7 +11,7 @@
     <div class="panel panel-default">
         <input id="killId" value="${detail.id}" type="hidden"/>
         <div class="panel-heading">
-            <h1>商品名称：${detail.itemName}</h1>
+            <h1>商品名称：${detail.name}</h1>
         </div>
         <div class="panel-body">
             <h2 class="text-danger">剩余数量：${detail.total}</h2>
@@ -54,11 +54,12 @@
             dataType: "json",
 
             success: function(res){
-                if (res.code==0) {
-                    //alert(res.msg);
+                debugger;
+                if (res.code==200) {
+                    alert(res.msg);
                     window.location.href="${ctx}/kill/execute/success"
                 }else{
-                    //alert(res.msg);
+                    alert(res.msg);
                     window.location.href="${ctx}/kill/execute/fail"
                 }
             },
@@ -71,13 +72,13 @@
 
     function getJsonData() {
         var killId=$("#killId").val();
-        /*var data = {
-            "killId":killId,
-            "userId":1
-        };*/
         var data = {
-            "killId":killId
+            "killId":killId,
+            "userId":10
         };
+        // var data = {
+        //     "killId":killId
+        // };
         return data;
     }
 </script>

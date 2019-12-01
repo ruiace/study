@@ -1,7 +1,11 @@
 package com.rp.service.kill.mapper;
 
+import com.rp.service.kill.dto.KillSuccessUserInfo;
 import com.rp.service.kill.entity.ItemKillSuccess;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface ItemKillSuccessMapper extends BaseMapper<ItemKillSuccess> {
 
+    KillSuccessUserInfo selectByOrderNo(@Param("orderNo") String orderNo);
+
+    List<ItemKillSuccess> selectOrderExpireList();
 }
