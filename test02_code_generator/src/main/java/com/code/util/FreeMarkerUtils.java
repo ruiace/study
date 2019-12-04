@@ -19,6 +19,7 @@ public class FreeMarkerUtils {
             configuration.setDefaultEncoding("UTF-8");   //设置编码
             //模板文件
             template=configuration.getTemplate(templateFileName + ".ftl");
+            System.out.println("");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -18,7 +18,7 @@ public class MvcHandler {
     public void executeModule(Table table) {
         Map input = new HashMap();
         input.put("table", table);
-        input.put("package", "dm");
+        input.put("package", "rp");
         input.put("lowerClassName", StringUtils.lowerName(table.getClassName()));
         String fileName = table.getClassName() + ".java";
         String savePath = Constant.model_save_path;

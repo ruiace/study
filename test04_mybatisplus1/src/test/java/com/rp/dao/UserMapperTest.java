@@ -38,6 +38,7 @@ class UserMapperTest {
         user.setId(1199110934904213506L);
         user.setEmail("123456789");
         boolean insert = user.updateById();
+        //userMapper.insert()
         System.out.println("insert--->" + insert);
     }
 

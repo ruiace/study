@@ -17,8 +17,8 @@ public class Genterator {
         MvcHandler mvcHandler = new MvcHandler();
         List<Table> tableList = tableHandler.getTables();
         for (Table table : tableList) {
-//            mvcHandler.executeModule(table);//0k
-//            mvcHandler.executeMapper(table);//ok
+            mvcHandler.executeModule(table);//0k
+            mvcHandler.executeMapper(table);//ok
 //            mvcHandler.executeClazzMapper(table);//ok
 
 //              common模块对应的client接口
@@ -42,11 +42,11 @@ public class Genterator {
 //            mvcHandler.executeClientFallBack_dm(table);//ok
 
 //             user模块对应的client接口
-            mvcHandler.executeClient_dm_user(table);//ok
-            mvcHandler.executeClientFallBack_dm(table);//ok
-
-//             item模块对应的provider实现
-            mvcHandler.executeService_dm_item(table);//ok
+//            mvcHandler.executeClient_dm_user(table);//ok
+//            mvcHandler.executeClientFallBack_dm(table);//ok
+//
+////             item模块对应的provider实现
+//            mvcHandler.executeService_dm_item(table);//ok
 
 //             order模块对应的provider实现
 //            mvcHandler.executeService_dm_order(table);//ok
