@@ -1,11 +1,11 @@
 package com.rp.client;
-import cn.dm.pojo.DmTrade;
+import com.rp.pojo.DmTrade;
 
-import cn.dm.fallback.DmTradeClientFallBack;
+import com.rp.fallback.DmTradeClientFallBack;
 import java.util.List;
 import java.util.Map;
 
-import cn.dm.config.DmConfiguration;
+import com.rp.config.DmConfiguration;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

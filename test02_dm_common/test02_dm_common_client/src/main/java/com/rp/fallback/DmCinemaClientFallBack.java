@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmCinema;
+import com.rp.pojo.DmCinema;
 
-import cn.dm.client.RestDmCinemaClient;
+import com.rp.client.RestDmCinemaClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

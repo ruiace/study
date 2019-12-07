@@ -6,9 +6,9 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import com.rp.common.Constants;
 
 /**
- * Created by Administrator on 2018-5-13.
  */
 @Configuration
 public class RabbitMQUtils {

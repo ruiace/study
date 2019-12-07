@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.dm.mapper.DmItemCommentMapper;
-import cn.dm.pojo.DmItemComment;
+import com.rp.mapper.DmItemCommentMapper;
+import com.rp.pojo.DmItemComment;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

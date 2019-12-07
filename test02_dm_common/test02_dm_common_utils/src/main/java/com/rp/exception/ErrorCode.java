@@ -1,6 +1,6 @@
-package cn.dm.exception;
+package com.rp.exception;
 
-import cn.dm.common.IErrorCode;
+import com.rp.common.IErrorCode;
 
 public enum ErrorCode implements IErrorCode {
     /**通用异常**/

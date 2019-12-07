@@ -1,4 +1,4 @@
-package cn.dm.common;
+package com.rp.common;
 
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;

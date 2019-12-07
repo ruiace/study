@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmArea;
+import com.rp.pojo.DmArea;
 
-import cn.dm.client.RestDmAreaClient;
+import com.rp.client.RestDmAreaClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

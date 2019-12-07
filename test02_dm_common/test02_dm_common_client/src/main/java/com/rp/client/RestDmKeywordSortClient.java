@@ -1,11 +1,11 @@
 package com.rp.client;
-import cn.dm.pojo.DmKeywordSort;
+import com.rp.pojo.DmKeywordSort;
 
-import cn.dm.fallback.DmKeywordSortClientFallBack;
+import com.rp.fallback.DmKeywordSortClientFallBack;
 import java.util.List;
 import java.util.Map;
 
-import cn.dm.config.DmConfiguration;
+import com.rp.config.DmConfiguration;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by dm
 */
-@FeignClient(name = "dm-item-provider", configuration = DmConfiguration.class, fallback = DmKeywordSortClientFallBack.class)
+@FeignClient(name = "test02-dm-base-provider", configuration = DmConfiguration.class, fallback = DmKeywordSortClientFallBack.class)
 public interface RestDmKeywordSortClient {
 
 @RequestMapping(value = "/getDmKeywordSortById",method = RequestMethod.POST)

@@ -1,6 +1,6 @@
-package cn.dm.interceptor;
-import cn.dm.common.*;
-import cn.dm.exception.ErrorCode;
+package com.rp.interceptor;
+import com.rp.common.*;
+import com.rp.exception.ErrorCode;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * <p></p>
  *
- * @author zzshang
- * @version v1.0
- * @since 2015/5/19
  */
 public class ValidateInterceptor implements HandlerInterceptor {
 
@@ -49,7 +46,9 @@ public class ValidateInterceptor implements HandlerInterceptor {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
         PrintUtil print = new PrintUtil(response);
-        Dto dto =null;
+
+        Dto dto = new Dto();
+
         logger.info(request.getRequestURI() + ">>>>>>");
         //拦截异常信息
         if (EmptyUtils.isNotEmpty(ex)) {

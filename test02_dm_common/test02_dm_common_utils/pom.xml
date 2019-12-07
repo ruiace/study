@@ -8,9 +8,11 @@
 		<version>1.5.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.rp</groupId>
 	<artifactId>test02_dm_common_utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>test02_dm_common_utils</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -24,11 +26,13 @@
 				<artifactId>uasparser</artifactId>
 				<version>0.6.0</version>
 			</dependency>
+
 			<dependency>
 				<groupId>com.rp</groupId>
 				<artifactId>test02_dm_common_dto</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>

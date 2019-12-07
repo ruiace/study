@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by dm
 */
-@FeignClient(name = "dm-user-provider", configuration = DmConfiguration.class, fallback = DmItemCommentClientFallBack.class)
+@FeignClient(name = "test02-dm-item-provider", configuration = DmConfiguration.class, fallback = DmItemCommentClientFallBack.class)
 public interface RestDmItemCommentClient {
 @RequestMapping(value = "/getDmItemCommentById",method = RequestMethod.POST)
 public DmItemComment getDmItemCommentById(@RequestParam("id") Long id)throws Exception;

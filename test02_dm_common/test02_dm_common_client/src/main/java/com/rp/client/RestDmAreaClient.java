@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by dm
 */
-@FeignClient(name = "dm-item-provider", configuration = DmConfiguration.class, fallback = DmAreaClientFallBack.class)
+@FeignClient(name = "test02-dm-base-provider", configuration = DmConfiguration.class, fallback = DmAreaClientFallBack.class)
 public interface RestDmAreaClient {
 
 @RequestMapping(value = "/getDmAreaById",method = RequestMethod.POST)

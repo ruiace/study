@@ -103,7 +103,7 @@
                     #{updatedTime})
     </insert>
 
-    <update id="updateDmItemComment" parameterType="cn.dm.pojo.DmItemComment">
+    <update id="updateDmItemComment" parameterType="com.rp.pojo.DmItemComment">
         update dm_item_comment
         <trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
                         <if test="itemId != null and itemId!=''">

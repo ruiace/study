@@ -1,11 +1,11 @@
 package com.rp.client;
-import cn.dm.pojo.DmScheduler;
+import com.rp.pojo.DmScheduler;
 
-import cn.dm.fallback.DmSchedulerClientFallBack;
+import com.rp.fallback.DmSchedulerClientFallBack;
 import java.util.List;
 import java.util.Map;
 
-import cn.dm.config.DmConfiguration;
+import com.rp.config.DmConfiguration;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

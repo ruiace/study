@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmOrderLinkUser;
+import com.rp.pojo.DmOrderLinkUser;
 
-import cn.dm.client.RestDmOrderLinkUserClient;
+import com.rp.client.RestDmOrderLinkUserClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

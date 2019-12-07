@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmSchedulerSeatPrice;
+import com.rp.pojo.DmSchedulerSeatPrice;
 
-import cn.dm.client.RestDmSchedulerSeatPriceClient;
+import com.rp.client.RestDmSchedulerSeatPriceClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

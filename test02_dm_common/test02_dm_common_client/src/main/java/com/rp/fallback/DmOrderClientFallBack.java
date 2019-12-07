@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmOrder;
+import com.rp.pojo.DmOrder;
 
-import cn.dm.client.RestDmOrderClient;
+import com.rp.client.RestDmOrderClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmTrade;
+import com.rp.pojo.DmTrade;
 
-import cn.dm.client.RestDmTradeClient;
+import com.rp.client.RestDmTradeClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

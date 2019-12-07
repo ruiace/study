@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmKeywordSort;
+import com.rp.pojo.DmKeywordSort;
 
-import cn.dm.client.RestDmKeywordSortClient;
+import com.rp.client.RestDmKeywordSortClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

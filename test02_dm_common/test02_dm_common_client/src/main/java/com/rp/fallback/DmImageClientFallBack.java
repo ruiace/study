@@ -1,8 +1,8 @@
 package com.rp.fallback;
 
-import cn.dm.pojo.DmImage;
+import com.rp.pojo.DmImage;
 
-import cn.dm.client.RestDmImageClient;
+import com.rp.client.RestDmImageClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;
@@ -32,6 +32,11 @@ public class DmImageClientFallBack implements RestDmImageClient {
 
     @Override
     public Integer qdtxModifyDmImage(DmImage dmImage)throws Exception{
+        return null;
+    }
+
+    @Override
+    public List<DmImage> queryDmImageList(Long targetId, Integer type, Integer category) throws Exception {
         return null;
     }
 }

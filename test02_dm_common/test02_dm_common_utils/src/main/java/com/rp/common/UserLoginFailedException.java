@@ -1,4 +1,4 @@
-package cn.dm.common;
+package com.rp.common;
 /**
  * 用户登录失败异常
  * @author hduser

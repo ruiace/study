@@ -1,4 +1,4 @@
-package cn.dm.common;
+package com.rp.common;
 
 public class Constants {
 

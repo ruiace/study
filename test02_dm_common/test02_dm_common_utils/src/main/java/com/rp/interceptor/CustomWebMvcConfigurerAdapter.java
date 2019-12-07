@@ -1,5 +1,5 @@
-package cn.dm.interceptor;
-import cn.dm.common.LogUtils;
+package com.rp.interceptor;
+import com.rp.common.LogUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

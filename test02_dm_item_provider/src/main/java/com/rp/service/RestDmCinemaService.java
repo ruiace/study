@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.dm.mapper.DmCinemaMapper;
-import cn.dm.pojo.DmCinema;
+import com.rp.mapper.DmCinemaMapper;
+import com.rp.pojo.DmCinema;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

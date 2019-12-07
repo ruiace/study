@@ -1,11 +1,11 @@
 package com.rp.client;
-import cn.dm.pojo.DmItem;
+import com.rp.pojo.DmItem;
 
-import cn.dm.fallback.DmItemClientFallBack;
+import com.rp.fallback.DmItemClientFallBack;
 import java.util.List;
 import java.util.Map;
 
-import cn.dm.config.DmConfiguration;
+import com.rp.config.DmConfiguration;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 /**
 * Created by dm
 */
-@FeignClient(name = "dm-user-provider", configuration = DmConfiguration.class, fallback = DmItemClientFallBack.class)
+@FeignClient(name = "test02-dm-item-provider", configuration = DmConfiguration.class, fallback = DmItemClientFallBack.class)
 public interface RestDmItemClient {
 @RequestMapping(value = "/getDmItemById",method = RequestMethod.POST)
 public DmItem getDmItemById(@RequestParam("id") Long id)throws Exception;
